@@ -32,3 +32,26 @@ nav li a {
 nav li a:hover {
   color: white;
 }
+
+/* Inicia the Main section  */
+.main_section {
+  padding: 15%;
+  text-align: center;
+}
+/* Finaliza the Main section  */
+
+.products {
+  background-image: url("../images/galaxy.png");
+  height: 200px;
+  background-size: cover;
+  background-position: center top;
+  padding: 15%;
+  display: flex;
+}
+.product {
+  padding: 10px;
+}
+.product .content {
+  background-color: white;
+  padding: 20px;
+}

@@ -1,19 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open + Sans:400,700&display=swap");
+/* --------------- Open Variables -------------*/
+:root {
+  --green-color: #7acc2d;
+  --white-color: white;
+  --black-color: #313337;
+  /* Tipografía */
+  --normal: 12px;
+  /* Espaciado */
+  --space: 10px;
+  /* Box-shadow */
+  --box: 0px 0 2px 1px #e6d5d9;
+}
+
+/*------------ Close variables------------ */
+
+html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 12px;
-  font-family: Helvetica;
+  font-size: var(--normal);
+  font-family: ‘Open Sans’, sans-serif;
 }
 
 nav {
   display: flex;
-  background-color: #7acc2d;
-  padding: 10px;
-  color: aliceblue;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
   justify-content: space-between;
   align-items: center;
 }
-
+/* -----------nav----------- */
 nav ul {
   display: flex;
   justify-content: left;
@@ -25,14 +42,14 @@ nav li {
 }
 
 nav li a {
-  color: gray;
+  color: var(--black-color);
   text-decoration: none;
 }
 
 nav li a:hover {
-  color: white;
+  color: var(--white-color);
 }
-
+/* -----------finaliza NAV--------- */
 /* Inicia the Main section  */
 .main_section {
   padding: 15%;
@@ -49,13 +66,13 @@ nav li a:hover {
   display: flex;
 }
 .product {
-  padding: 10px;
+  padding: var(--space);
   margin-top: -230px;
 }
 .product .content {
-  background-color: white;
+  background-color: var(--white-color);
   padding: 15px;
-  box-shadow: 0 0 1px #c1bcbc;
+  box-shadow: var(--box);
 }
 
 .img_content {
@@ -63,11 +80,11 @@ nav li a:hover {
 }
 
 .main_button {
-  background-color: #7acc2d;
+  background-color: var(--green-color);
   width: 100%;
-  padding: 10px;
-  font-size: 12px;
-  color: white;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
   border: 0;
   cursor: pointer;
   border-radius: 2px;
@@ -75,4 +92,84 @@ nav li a:hover {
 
 .main_button:hover {
   background-color: #5e9e22;
+}
+
+/* sección que detalla mas lo genial de la caja de gatitos */
+.beneficios {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+.beneficio {
+  justify-content: center;
+  margin-top: 100px;
+  height: 100%;
+}
+
+.card__image {
+  width: 180px;
+  justify-content: center;
+}
+
+.item h1,
+p {
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+/* -------- Honorable_mentions -------- */
+
+.user_opinion__container {
+  display: flex;
+  margin: 10px 30px;
+  justify-content: center;
+}
+
+.opinion_card {
+  width: 230px;
+  height: 190px;
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: var(--box);
+}
+.opinion__image {
+  justify-content: center;
+  height: 60px;
+}
+
+.opinion_card,
+p {
+  font-size: 12px;
+}
+
+/* --------Footer-------- */
+footer {
+  background-color: #313337;
+  padding: 5px;
+  color: white;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  list-style: none;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+footer li a:hover {
+  color: var(--white-color);
+  text-decoration: none;
 }

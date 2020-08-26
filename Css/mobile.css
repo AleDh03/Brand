@@ -13,4 +13,11 @@
   .beneficios {
     display: inherit;
   }
+  .mentions {
+    display: inherit;
+    height: auto;
+  }
+  .mention img {
+    margin: auto;
+  }
 }

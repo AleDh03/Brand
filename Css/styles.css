@@ -16,134 +16,142 @@
 
 html,
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  color: var(--black-color);
+  overflow-x: hidden;
+}
+
+p {
   font-size: var(--normal);
-  font-family: ‘Open Sans’, sans-serif;
 }
 
 nav {
   display: flex;
-  background-color: var(--green-color);
-  padding: var(--space);
-  color: var(--white-color);
   justify-content: space-between;
   align-items: center;
-}
-/* -----------nav----------- */
-nav ul {
-  display: flex;
-  justify-content: left;
+  width: 100%;
+  padding: var(--space);
+  height: 40px;
+  background-color: var(--green-color);
 }
 
-nav li {
-  padding-left: 20px;
+nav a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+nav a:hover {
+  color: var(--white-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-right: 20px;
   list-style: none;
 }
 
-nav li a {
-  color: var(--black-color);
-  text-decoration: none;
+hr {
+  opacity: 0.2;
 }
 
-nav li a:hover {
-  color: var(--white-color);
-}
-/* -----------finaliza NAV--------- */
-/* Inicia the Main section  */
+/* ------------------------------------------- MAIN SECTION */
+
 .main_section {
-  padding: 15%;
   text-align: center;
+  padding: 15%;
 }
-/* Finaliza the Main section  */
+
+/* -------------------------------------------  PRODUCTOS */
 
 .products {
   background-image: url("../images/galaxy.png");
-  max-height: 50px;
-  background-size: cover;
+  padding: 15%;
   background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+}
+
+.product {
+  padding: 20px;
+  margin-top: -200px;
+}
+
+.image-product {
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_btn {
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.main_btn:hover {
+  background-color: #63a426;
+}
+
+/* --------Beneficios-------- */
+.beneficios_title {
   padding: 20%;
   display: flex;
 }
-.product {
-  padding: var(--space);
-  margin-top: -230px;
-}
-.product .content {
-  background-color: var(--white-color);
-  padding: 15px;
-  box-shadow: var(--box);
-}
-
-.img_content {
-  text-align: center;
-}
-
-.main_button {
-  background-color: var(--green-color);
-  width: 100%;
-  padding: var(--space);
-  font-size: var(--normal);
-  color: var(--white-color);
-  border: 0;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.main_button:hover {
-  background-color: #5e9e22;
-}
-
-/* sección que detalla mas lo genial de la caja de gatitos */
 .beneficios {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 200px;
+  margin-top: 100px;
 }
 
 .beneficio {
-  justify-content: center;
-  margin-top: 100px;
-  height: 100%;
-}
-
-.card__image {
-  width: 180px;
-  justify-content: center;
-}
-
-.item h1,
-p {
   text-align: center;
-  font-size: 14px;
-  overflow: hidden;
+  padding: 20px;
 }
 
-/* -------- Honorable_mentions -------- */
+.beneficio img {
+  height: 100px;
+}
 
-.user_opinion__container {
+.text_beneficio {
+  text-align: justify;
+}
+
+/* ------- Mentions------- */
+
+.mentions {
   display: flex;
-  margin: 10px 30px;
-  justify-content: center;
 }
-
-.opinion_card {
-  width: 230px;
-  height: 190px;
-  display: inline-block;
-  margin: 10px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: var(--box);
+.mention img {
+  height: 100px;
+  border-radius: 4px;
 }
-.opinion__image {
-  justify-content: center;
-  height: 60px;
+.mention_title h2 {
+  text-align: center;
 }
-
-.opinion_card,
-p {
-  font-size: 12px;
+.mention {
+  padding: var(--space);
+  flex-wrap: nowrap;
+}
+.content_mention {
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text {
+  padding: var(--space);
 }
 
 /* --------Footer-------- */
@@ -152,15 +160,14 @@ footer {
   padding: 5px;
   color: white;
 }
-
 .footer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   list-style: none;
 }
-
 .footer li {
   list-style: none;
 }
@@ -169,7 +176,6 @@ footer {
   color: var(--white-color);
   text-decoration: none;
 }
-footer li a:hover {
-  color: var(--white-color);
+.footer li a:hover {
   text-decoration: none;
 }

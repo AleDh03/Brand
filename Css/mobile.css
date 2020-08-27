@@ -10,9 +10,7 @@
     padding: 4%;
   }
 
-  .beneficios {
-    display: inherit;
-  }
+  .beneficios,
   .mentions {
     display: inherit;
     height: auto;

@@ -207,6 +207,8 @@ footer {
   padding-left: 15px;
   list-style: none;
 }
+.contact {
+}
 
 .footer li {
   list-style: none;
@@ -219,4 +221,5 @@ footer {
 
 .footer li a:hover {
   text-decoration: none;
+  color: var(--green-color);
 }

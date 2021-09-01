@@ -9,97 +9,93 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     /> -->
-
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/venta.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="Css/animation.css" />
     <link rel="stylesheet" href="Css/grid.css" />
     <title>BRAND📦</title>
   </head>
-  <!-- Cierra head -->
 
   <body>
-    <nav class="fadeInDown">
-      <img src="images/logo.png" alt="" />
-      <ul>
-        <li>
-          <a href="#">Faqs</a>
-        </li>
-        <li>
-          <a href="#">Producto y descripción</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <img class="myLogo" src="images/myLogo .png" alt="myLogo" />
+      <nav class="fadeInDown">
+        <ul>
+          <li>
+            <a href="#">Faqs</a>
+          </li>
+          <li>
+            <a href="#">Producto y descripción</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- -------Formulario venta--------- -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="container">
+    <section class="container">
+
       <div class="row">
         <div class="col-4">
           <div class="modulo_pago">
             <div class="modulo_pago_images">
               <img src="images/box2.png" alt="" />
             </div>
-            <h3>Producto 1</h3>
+            <h3>Kitties Box</h3>
             <p>Miles de hermosos productos para adquirir</p>
           </div>
         </div>
 
         <div class="col-8">
           <div class="modulo_pago">
-            <!-- este modelo es muy empleado para diseñar un formularío usando el tag form con action para ser redirigido
+            <!-- este modelo es muy empleado para diseñar un formulario usando el tag form con action para ser redirigido
         a otra pagina, según se le asigne  -->
-            <form
+            <form 
               action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7VM47PD423TZ4"
               method="post"
             >
-              <label for="name"> Nombre:</label> <br />
+              <label for="name"></label> <br />
               <input
                 type="text"
-                placeholder=""
+                placeholder="Your name"
                 name="name"
                 class="data"
               /><br />
 
-              <label for="mail"> Correo:</label> <br />
+              <label for="mail"></label>
               <input
                 type="text"
-                placeholder=""
+                placeholder="Your email"
                 name="mail"
                 class="data"
               /><br />
 
-              <label for="phone"> Teléfono:</label> <br />
+              <label for="phone"></label>
               <input
                 type="text"
-                placeholder=""
+                placeholder="Your phone"
                 name="phone"
                 class="data"
               /><br />
 
-              <input type="submit" class="main_btn" class="submit" />
+              <input type="submit" class="main_btn" id="submit" />
             </form>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer">
+    <footer id="footer">
+
         <ul>
           <li>
             <a href="#">Términos y Condiciones</a>
           </li>
           <li>
-            <a href="#">Contacto@mail.com</a>
+            <a class="contact" href="mailto:contacto@brand.com">luis.hdez03@hotmail.com</a>
           </li>
         </ul>
-      </div>
     </footer>
 
     <!-- Script -->

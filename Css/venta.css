@@ -39,6 +39,7 @@ header {
   align-items: center;
   width: 100%;
   padding: var(--space);
+  margin-bottom: 20%;
   height: 60px;
   background-color: var(--green-color);
 }
@@ -62,118 +63,52 @@ nav ul li {
   list-style: none;
 }
 
-hr {
-  opacity: 0.2;
+/* --------PAGINA VENTA-------- */
+.container {
+  height: 100vh;
 }
 
-/* ------------------------------------------- MAIN SECTION */
-
-.main_section {
-  text-align: center;
-  padding: 15%;
-}
-
-/* -------------------------------------------  PRODUCTOS */
-
-.products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  background-image: url("../images/galaxy.png");
-  background-size: cover;
-  background-position: center;
-  height: 60%;
-  padding: 5%;
-}
-
-.product {
-  padding: 20px;
-}
-
-.product h3 {
-  text-align: center;
-}
-
-.image-product {
-  text-align: center;
-}
-
-.content {
-  padding: 20px;
-  background: var(--white-color);
-  border-radius: 3px;
-  box-shadow: 0px 0 2px 1px #e6e5e9;
-  opacity: 0.8;
-}
-
-.main_btn {
+.modulo_pago {
+  background-color: var(--white-color);
+  box-shadow: var(--box);
   padding: var(--space);
-  background-color: var(--green-color);
+  font-size: 1.2rem;
+}
+
+.modulo_pago h3,
+p {
+  text-align: center;
+}
+
+.modulo_pago_images {
+  max-width: 150px;
+  text-align: center;
   width: 100%;
-  border: 0px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: var(--white-color);
-  font-size: var(--normal);
-}
-.main_btn:hover {
-  background-color: #63a426;
+  margin: auto;
 }
 
-/* --------Beneficios-------- */
-.beneficios_title {
-  padding: 20%;
-  display: flex;
+.modulo_pago input {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
 }
 
-.beneficios {
-  display: flex;
-  height: 50%;
-  padding: 5%;
-  justify-content: center;
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--black-color);
+  border-radius: 2px;
+  box-sizing: border-box;
 }
 
-.beneficio {
-  align-items: center;
-  justify-content: center;
-  padding: 6%;
+.modulo_pago .main_btn {
+  margin-top: 10px;
 }
 
-.beneficio img {
-  height: 100px;
-}
-
-.text_beneficio {
-  text-align: justify;
-}
-
-/* ------- Mentions------- */
-
-.mentions {
-  display: flex;
-  align-items: center;
-  height: 300px;
-}
-.mention img {
-  height: 100px;
-  border-radius: 4px;
-}
-.mention_title {
-  text-align: center;
-}
-.mention {
-  padding: var(--space);
-  flex-wrap: nowrap;
-}
-.content_mention {
-  box-shadow: 0px 0 2px 1px #e6e5e9;
-}
-.mention .text {
-  padding: var(--space);
-}
-
-/* --------Footer-------- */
 #footer {
   color: white;
   background-color: rgb(0, 0, 0, 0.8);
